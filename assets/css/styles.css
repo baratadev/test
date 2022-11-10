@@ -148,6 +148,7 @@ table {
   --secondary-txt-color: #808080;
   --hightlight-color: #f5de04;
   --lowlight-color: #d0343a;
+  --lowlight-faded-color: rgba(208, 52, 58, 0.3);
 
   --page-wrap: 104rem;
   --page-padding: 0 1rem;
@@ -164,6 +165,12 @@ table {
   overflow-y: hidden;
 }
 
+.body--flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .wrap {
   width: 100%;
   max-width: var(--page-wrap);
@@ -171,6 +178,10 @@ table {
   position: relative;
   padding: var(--page-padding);
   box-sizing: border-box;
+}
+
+.main--flex {
+  flex: 1;
 }
 
 /* masthead */
@@ -489,14 +500,13 @@ table {
 }
 
 .footer {
-  background-color: var(--secondary-bg-color);
+  background-color: #090c0e;
   padding: 4rem 0;
 }
 
 .footer--bottom {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  width: 100%;
 }
 
 .footer__txt {
@@ -635,7 +645,7 @@ table {
   top: 0;
   margin-left: 0;
   left: 4rem;
-  background: rgba(208, 52, 58, 0.3);
+  background: var(--lowlight-faded-color);
   z-index: -1;
 }
 
@@ -696,6 +706,10 @@ table {
   }
 }
 
+.timeline__content-list {
+  margin-left: 0;
+}
+
 .timeline__more {
   display: block;
   font-weight: 400;
@@ -727,7 +741,7 @@ table {
 .timeline__content-right {
   position: relative;
   width: auto;
-  border: 1px solid rgba(208, 52, 58, 0.3);
+  border: 1px solid var(--lowlight-faded-color);
   background-color: var(--secondary-bg-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
   padding: 1rem 2.5rem;
@@ -773,7 +787,7 @@ table {
   top: 2rem;
   font-size: 2.3rem;
   font-family: "Font Awesome 6 Free";
-  color: rgba(208, 52, 58, 0.3);
+  color: var(--lowlight-faded-color);
 }
 
 .timeline__content-left:before {
@@ -804,7 +818,7 @@ table {
   color: white;
   border-radius: 100%;
   background: #090c0e;
-  border: 1px solid rgba(208, 52, 58, 0.3);
+  border: 1px solid var(--lowlight-faded-color);
 }
 
 @media only screen and (min-width: 780px) {
@@ -829,6 +843,32 @@ table {
 .timeline__month {
   font-size: 1.5rem;
   line-height: 0rem;
+}
+
+.timeline-media {
+  display: flex;
+  margin-top: 1rem;
+  padding-top: .5rem;
+}
+
+.timeline-media__list {
+  margin-right: 1.5rem;
+}
+
+@media only screen and (min-width: 780px) {
+  .timeline-media--left:last-child {
+    margin-right: 0;
+  }
+}
+
+.timeline-media__icon {
+  font-size: 1.7rem;
+  color: var(--lowlight-faded-color);
+  transition: color 0.3s;
+}
+
+.timeline-media__icon:hover {
+  color: var(--lowlight-color);
 }
 
 /* accordion */

@@ -14,7 +14,7 @@
   <title>TEST - Um Disco Normal</title>
 </head>
 
-<body class="body">
+<body class="body body--flex">
   <header class="masthead masthead--inner">
 
     <nav class="main-nav">
@@ -36,7 +36,7 @@
 
     </nav>
 
-    <div class="wrap">
+    <div class="wrap wrap--flex">
 
       <button class="menu-toggle" aria-label="Abrir menu" aria-haspopup="true" aria-controls="main-nav"
         aria-expanded="false">
@@ -64,7 +64,7 @@
 
   </header>
 
-  <main>
+  <main class="main main--flex">
 
     <div class="wrap">
 
@@ -82,14 +82,22 @@
           <!-- article -->
           <article class="timeline__article">
             <div class="timeline__left-container">
-              <ul class="timeline__content-left fa-ul">
-                <li class="timeline__txt">
-                  <span class="fa-li"><i class="timeline__icon fa-solid fa-tree-city"></i></span> Dallas, TX
-                </li>
-                <li class="timeline__txt">
-                  <span class="fa-li"><i class="timeline__icon fa-solid fa-location-dot"></i></span> The Post
-                </li>
-              </ul>
+              <div class="timeline__content-left">
+                <ul class="timeline__content-list fa-ul">
+                  <li class="timeline__txt">
+                    <span class="fa-li"><i class="timeline__icon fa-solid fa-tree-city"></i></span> Dallas, TX
+                  </li>
+                  <li class="timeline__txt">
+                    <span class="fa-li"><i class="timeline__icon fa-solid fa-location-dot"></i></span> The Post
+                  </li>
+                </ul>
+                <ul class="timeline-media timeline-media--left">
+                  <li class="timeline__txt timeline-media__list">
+                    <a href="#" title="Vídeo do show" target="_blank" class="timeline-media__link"><i
+                        class="timeline-media__icon fa-solid fa-video"></i></a>
+                  </li>
+                </ul>
+              </div> <!-- /timeline__content-left-->
               <span class="timeline__more timeline__more--left">U.S. Tour 2022
               </span>
             </div>
@@ -103,14 +111,31 @@
           <!-- Article -->
           <article class="timeline__article">
             <div class="timeline__right-container">
-              <ul class="timeline__content-right fa-ul">
-                <li class="timeline__txt">
-                  <span class="fa-li"><i class="timeline__icon fa-solid fa-tree-city"></i></span> Dallas, TX
-                </li>
-                <li class="timeline__txt">
-                  <span class="fa-li"><i class="timeline__icon fa-solid fa-location-dot"></i></span> The Post
-                </li>
-              </ul>
+              <div class="timeline__content-right">
+                <ul class="timeline__content-list fa-ul">
+                  <li class="timeline__txt">
+                    <span class="fa-li"><i class="timeline__icon fa-solid fa-tree-city"></i></span> Dallas, TX
+                  </li>
+                  <li class="timeline__txt">
+                    <span class="fa-li"><i class="timeline__icon fa-solid fa-location-dot"></i></span> The Post
+                  </li>
+                </ul>
+                <!-- show media -->
+                <ul class="timeline-media">
+                  <li class="timeline__txt timeline-media__list">
+                    <a href="#" title="Vídeo do show" target="_blank" class="timeline-media__link"><i
+                        class="timeline-media__icon fa-solid fa-video"></i></a>
+                  </li>
+                  <li class="timeline__txt timeline-media__list">
+                    <a href="#" title="Fotos do show" target="_blank" class="timeline-media__link"><i
+                        class="timeline-media__icon fa-solid fa-camera"></i></a>
+                  </li>
+                  <li class="timeline__txt timeline-media__list">
+                    <a href="#" title="Flyer do show" target="_blank" class="timeline-media__link"><i
+                        class="timeline-media__icon fa-solid fa-image"></i></a>
+                  </li>
+                </ul>
+              </div> <!-- /timeline__content-right-->
               <span class="timeline__more">U.S Tour 2022</span>
             </div>
             <p class="timeline__date">
