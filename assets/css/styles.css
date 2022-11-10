@@ -493,6 +493,12 @@ table {
   padding: 4rem 0;
 }
 
+.footer--bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer__txt {
   font-size: 1.4rem;
   text-align: center;
