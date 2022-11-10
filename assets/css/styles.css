@@ -709,6 +709,14 @@ table {
   text-align: left;
 }
 
+@media only screen and (min-width: 780px) {
+  .timeline__content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
 .timeline__content-left,
 .timeline__content-right {
   position: relative;
@@ -725,11 +733,16 @@ table {
 
   .timeline__content-left,
   .timeline__content-right {
-    padding: 0.7rem 2.5rem;
+    padding: 0.7rem 0;
   }
 
   .timeline__content-left {
     text-align: right;
+    padding-right: 1rem;
+  }
+
+  .timeline__content-right {
+    padding-left: 3rem;
   }
 }
 
@@ -745,6 +758,7 @@ table {
   font-size: 1.2rem;
   line-height: 2.4rem;
   position: relative;
+
 }
 
 .timeline__content-left:before,
