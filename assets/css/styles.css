@@ -718,6 +718,7 @@ table {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
   padding: 1rem 2.5rem;
   min-height: 6.5rem;
+  margin: auto 0;
 }
 
 @media only screen and (min-width: 780px) {
