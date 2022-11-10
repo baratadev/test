@@ -758,7 +758,7 @@ table {
 
   .timeline__content-left {
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 3rem;
   }
 
   .timeline__content-right {
@@ -851,8 +851,14 @@ table {
   padding-top: .5rem;
 }
 
-.timeline-media__list {
+.timeline-media .timeline-media__list {
   margin-right: 1.5rem;
+}
+
+@media only screen and (min-width: 780px) {
+  .timeline-media--left .timeline-media__list:last-of-type {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (min-width: 780px) {
