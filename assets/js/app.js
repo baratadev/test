@@ -34,8 +34,6 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + 'px';
     }
 
-    this.firstElementChild.style.color = 'red';
-
-    console.log(this.firstElementChild);
+    this.firstElementChild.classList.toggle('timeline__span--active');
   });
 }

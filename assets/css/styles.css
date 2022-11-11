@@ -656,6 +656,7 @@ table {
   top: 50%;
   bottom: 50%;
   margin-bottom: -50%;
+  transition: .3s;
 }
 
 .timeline__span::after {
@@ -669,9 +670,16 @@ table {
   position: relative;
   transform: rotate(90deg);
   top: -2px;
+  opacity: 1;
 }
 
+.timeline__span--active {
+  transform: rotate(180deg);
+}
 
+.timeline__span--active::after {
+  opacity: 0;
+}
 
 .timeline__center-line {
   position: absolute;
