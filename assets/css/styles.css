@@ -630,6 +630,11 @@ table {
   position: relative;
   z-index: 1;
   cursor: pointer;
+
+  font-family: monospace;
+  color: white;
+  border: none;
+  max-width: 8.9rem;
 }
 
 @media only screen and (min-width: 780px) {
@@ -637,6 +642,36 @@ table {
     margin: 0 auto 4.2rem auto;
   }
 }
+
+.timeline__span {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  border-top: .2rem solid;
+  width: 2rem;
+  height: 0.3rem;
+  color: white;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  bottom: 50%;
+  margin-bottom: -50%;
+}
+
+.timeline__span::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: .2rem;
+  background-color: currentColor;
+  margin-top: 0rem;
+  transition: .3s;
+  position: relative;
+  transform: rotate(90deg);
+  top: -2px;
+}
+
+
 
 .timeline__center-line {
   position: absolute;
