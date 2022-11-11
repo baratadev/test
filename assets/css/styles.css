@@ -647,8 +647,8 @@ table {
   font-size: 2rem;
   cursor: pointer;
   display: block;
-  border-top: .2rem solid;
-  width: 2rem;
+  border-top: .3rem solid;
+  width: 1.7rem;
   height: 0.3rem;
   color: white;
   position: absolute;
@@ -662,14 +662,14 @@ table {
 .timeline__span::after {
   content: '';
   display: block;
-  width: 2rem;
-  height: .2rem;
+  width: 1.7rem;
+  height: .3rem;
   background-color: currentColor;
   margin-top: 0rem;
   transition: .3s;
   position: relative;
   transform: rotate(90deg);
-  top: -2px;
+  top: -0.35rem;
   opacity: 1;
 }
 
