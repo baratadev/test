@@ -144,6 +144,7 @@ table {
 :root {
   --main-bg-color: #13181d;
   --secondary-bg-color: rgba(0, 0, 0, 0.5);
+  --tertiary-bg-color: rgba(0, 0, 0, 0.25);
   --main-txt-color: #fff;
   --secondary-txt-color: #808080;
   --hightlight-color: #f5de04;
@@ -785,7 +786,7 @@ table {
   position: relative;
   width: auto;
   border: 1px solid var(--lowlight-faded-color);
-  background-color: var(--secondary-bg-color);
+  background-color: var(--tertiary-bg-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
   padding: 1rem 2.5rem;
   min-height: 6.5rem;
