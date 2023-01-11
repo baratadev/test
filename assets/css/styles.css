@@ -359,7 +359,7 @@ table {
 
 .embed {
   padding: 0;
-  margin-bottom: 9rem;
+  margin-bottom: 7rem;
 }
 
 .embed--inner {
@@ -400,6 +400,7 @@ table {
   font-weight: lighter;
   text-align: left;
   letter-spacing: 0.4rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -408,6 +409,10 @@ table {
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 0.7rem;
+}
+
+.quote {
+  font-style: italic;
 }
 
 /* discografia */
