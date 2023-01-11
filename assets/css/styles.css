@@ -386,7 +386,7 @@ table {
 
 /* title */
 .title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 3.5rem;
   font-size: 3.5rem;
   font-weight: 400;
