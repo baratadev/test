@@ -144,6 +144,7 @@ table {
 :root {
   --main-bg-color: #13181d;
   --secondary-bg-color: rgba(0, 0, 0, 0.5);
+  --secondary-bg-color-transparent: rgba(0, 0, 0, 0.17);
   --tertiary-bg-color: rgba(0, 0, 0, 0.25);
   --main-txt-color: #fff;
   --secondary-txt-color: #808080;
@@ -590,6 +591,82 @@ table {
 /* metadata */
 .metadata {
   margin-bottom: 2rem;
+}
+
+/* table */
+.table {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 7rem;
+}
+
+.table__table {
+  table-layout: fixed;
+  width: 100%;
+  padding: 5rem;
+}
+
+.table__item,
+.table__head,
+.table__data,
+.table__data--head {
+  padding: 1rem 1rem;
+  border: 1px solid var(--secondary-bg-color);
+}
+
+.table__item {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.table__head {
+  background-color: var(--secondary-bg-color-transparent);
+}
+
+.table__data--head {
+  text-align: left;
+  background-color: var(--secondary-bg-color-transparent);
+}
+
+.table__list {
+  padding-left: 1.5rem;
+}
+
+.table__list-item {
+  list-style-type: disc;
+  text-align: left;
+}
+
+.table__head .table__item:nth-child(1) {
+  width: 15rem;
+}
+
+.table__head .table__item:nth-child(2) {
+  width: 9rem;
+}
+
+.table__head .table__item:nth-child(3) {
+  width: 6rem;
+}
+
+.table__head .table__item:nth-child(4) {
+  width: 10rem;
+}
+
+.table__head .table__item:nth-child(5) {
+  width: 8rem;
+}
+
+.table__head .table__item:nth-child(6) {
+  width: 8rem;
+}
+
+.table__head .table__item:nth-child(7) {
+  width: 10rem;
+}
+
+.table__head .table__item:nth-child(8) {
+  width: 25rem;
 }
 
 /* text */
