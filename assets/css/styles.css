@@ -597,13 +597,11 @@ table {
 .table {
   overflow-x: auto;
   overflow-y: hidden;
-  margin-bottom: 7rem;
 }
 
 .table__table {
   table-layout: fixed;
   width: 100%;
-  padding: 5rem;
 }
 
 .table__item,
